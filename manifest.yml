@@ -7,15 +7,15 @@
 
 applications:
 # The Python app starts here
-- name: yourname-myapp
+- name: david-myapp
   memory: 256M
   command: python myapp.py
   routes:
-  - route: yourname-myapp.mybluemix.net
+  - route: david-myapp.cfapps.io
   path: ./top/
 # The Node.js app starts here  
-- name: yourname-myapp-node
+- name: david-myapp-node
   routes:
-  - route: yourname-myapp.mybluemix.net/lower
-  - route: yourname-myapp.mybluemix.net/sub
+  - route: david-myapp.cfapps.io/lower
+  - route: david-myapp.cfapps.io/sub
   path: ./lower/
